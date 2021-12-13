@@ -2,7 +2,7 @@
 
 <h2 style="font-size:2.5rem; color:#075FFF" align="center">Simply-DJS Docs</h2>
 
-<h2 align="center"> A Documentation for simply-djs package...<br><br></h2><h3 align="center">Developed by Rahuletto#0243<br>Made with React ⚛️</h3>
+<h2 align="center"> A Documentation for simply-djs package...<br><br></h2><h3 align="center">Developed by Rahuletto#0243</h3>
 
 <br>
 
@@ -15,6 +15,12 @@
 ------------
 
 <div align="center">
+
+### Made with React
+
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+
+
 
  ### Hosted using Netlify.
 
