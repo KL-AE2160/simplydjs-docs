@@ -35,7 +35,12 @@
 
 ## 👀 How to create a Pull Request (Request Changes)
 
--
+- Click on the fork button. Create a forked repo.
+- Make your changes in the repo.
+- Go to Pull Request tab and click Open Pull Request.
+- Fill out the Title and Description of what you are doing and click Create Pull Request.
+
+**That's all. We will look into your request and make the changes ;)**
 
 <br>
 
