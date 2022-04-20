@@ -6,7 +6,7 @@ tags:
 
 # toRgb
 
-Converts Hex code to RGB Array (or) RGB String. Useful for converting discord.js v13 to v14.
+Transforms Hex code into RGB Array (or) RGB String. This makes it easy to convert discord.js v13 to v14.
 
 ```js
 simplydjs.toRgb('hex code')
@@ -17,7 +17,7 @@ simplydjs.toRgb('hex code')
 This can be implemented anywhere. Even outside of discord.js ;)
 :::
 
-## Arguements:
+## Arguments:
 ```ts
 simplydjs.toRgb(hex: string, type: 'Array' | 'String')
 ```
