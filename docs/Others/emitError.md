@@ -6,7 +6,7 @@ tags:
 
 # emitError
 
-Emit Errors like Simply DJS does
+Produce error messages just like Simply DJS
 
 ```js
 simplydjs.emitError({ name: "Test", tip: "This is just to test" })
@@ -14,10 +14,10 @@ simplydjs.emitError({ name: "Test", tip: "This is just to test" })
 
 
 :::danger WARNING
-This can stop your whole project as it emits an error not logging in console.
+This may cause your entire project to stop as it emits an error not logging in the console.
 :::
 
-## Arguements:
+## Arguments:
 ```ts
 simplydjs.emitError({ name: string, tip: string })
 ```

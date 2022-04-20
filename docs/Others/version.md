@@ -6,7 +6,7 @@ tags:
 
 # version
 
-Returns the version of the package you are using.
+Provides the package version you are currently using.
 
 ```js
 simplydjs.version
