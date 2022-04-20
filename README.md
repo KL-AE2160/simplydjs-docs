@@ -1,4 +1,4 @@
-<p align="center"><img align="center" style="margin-bottom:-6px" src="https://i.imgur.com/Nyr37GK.webp?maxwidth=128&fidelity=grand"></p>
+<div align="center"><img style="width: 60%" src="https://user-images.githubusercontent.com/71836991/151350002-7a6885d1-b340-4b01-860a-0c0e9dc1d026.png"></div>
 
 <h2 style="font-size:2.5rem; color:#075FFF" align="center">Simply-DJS Docs</h2>
 
