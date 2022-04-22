@@ -1,124 +1,89 @@
 ---
-sidebar_position: 1
+sidebar_position: 3
+tags:
+  - Fun
 ---
 
 # tictactoe
 
-This is an example of tictactoe
+A Super fun **tictactoe game** that can be implemented by one line.
 
-:::tip TIP
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
-This function has became Promised based and can return the winner `<User>`
-
-:::
-
-### With Customization
+<Tabs
+  defaultValue="js"
+  values= {[
+    { label: 'Javascript', value: 'js', },
+    { label: 'Typescript', value: 'ts', },
+  ]
+}>
+<TabItem value="js">
 
 ```js
 const simplydjs = require("simply-djs");
 ```
 
-_`messageCreate` Event (tictactoe command)_
+</TabItem>
 
-```js
-// messageCreate Event
+<TabItem value="ts">
 
-simplydjs.tictactoe(message, {
-  xEmoji: "emoji id", //default: ❌
-  oEmoji: "emoji id", //default: ⭕
-  idleEmoji: "emoji id", //default: ➖
-  embedColor: "hex code", //default: #075FFF
-  embedFoot: "text for footer" //default: 'Make sure to win ;)'
-});
+```ts
+import simplydjs from "simply-djs";
 ```
 
-:::info INFO
+</TabItem>
 
-### Without Customization
-
-_`messageCreate` Event (tictactoe command)_
+</Tabs>
 
 ```js
-// messageCreate event
-
-simplydjs.tictactoe(message);
+simplydjs.tictactoe(interaction, { 
+  // options (optional)
+})
 ```
-
-:::
-
-## Returns `<User>`
-- tictactoe returns the user who won the match. so you can reward them with some money or xp.
-
-:::tip TIP
-
-### Slash Support.
-
-The package supports `Auto Slash Recognition !` So no more slash options.
-
-#### Slash command format
-
-```js
-{
-  name: 'tictactoe',
-  description: 'Just a fun TicTacToe. Using simply-djs',
-  options: [{
-        name: 'user',
-        type: 'USER',
-        description: 'user to compete with in TicTacToe using simply-djs',
-        required: true,
-      }],
-}
-```
-
-:::
 
 ## Output
 
-![image](https://user-images.githubusercontent.com/71836991/127869643-d78b69c4-ea01-4da2-abf7-2bc9584e1ae6.png)
+![image](https://user-images.githubusercontent.com/71836991/137742616-05fc1330-aeef-4f40-9031-1d81e93ff705.png)
 
-## Options for tictactoe function
+## Arguments:
+```ts
+simplydjs.tictactoe(
+  interaction: Discord.Message | Discord.CommandInteraction,
+  options: tttOptions
+)
+```
+
+- interaction [`Discord.Message`](https://discord.js.org/#/docs/discord.js/stable/class/Message) | [`Discord.CommandInteraction`](https://discord.js.org/#/docs/discord.js/stable/class/CommandInteraction)
+- options: [`tttOptions`](#options-tttoptions)
+
+## Options `tttOptions`
 
 import Link from '@docusaurus/Link';
 
-<div style={{textAlign: 'center'}}>
+| Parameter | Type | Required | Default    | Description |
+| --------- | ----- | -------- | -------- | ---------- |
+| `embed` | <Link to="/docs/types/CustomizableEmbed">CustomizableEmbed</Link> | ✘   | _Default Embed_     | Pass an CustomizableEmbed Object to customize the embed  |
+| `result` | <Link to="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'Button' / 'Embed'</Link> | ✘        | _'EMBED'_  | Choose the way you want to show the results of the match |
+| `user`   | <Link to="https://discord.js.org/#/docs/discord.js/stable/class/User">User</Link>     | ✘        | _none_ | The opponent of the player who invited to the match. |
+| `buttons` | <Link to="#tttbuttons">tttButtons</Link> | ✘   | _Default Buttons_     | Pass an tttButtons Object to customize the buttons  |
 
-| Options     | Type                                                                                                               | Required | Default | Description                                                     |
-| ----------- | ------------------------------------------------------------------------------------------------------------------ | -------- | ------- | --------------------------------------------------------------- |
-| `slash`     | <Link to="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</Link> | ✘        | _false_ | Slash Support for the Tictactoe (need to be in a slash command) |
-| `resultBtn`     | <Link to="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</Link> | ✘        | _false_ | Results will be in buttons not as code blocks |
+-------------------------
 
-</div>
+## `tttButtons`
 
-### Slash Customization
-<div style={{textAlign: 'center'}}>
+| Parameter      | Type                                                                                                                       | Description                                   |
+| ------------ | -------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- |
+| `X`        | <Link to="#tttBtnTemplate">btnTemplate</Link> | The Customization of the move of the 'X' user    |
+| `O`       | <Link to="#tttBtnTemplate">btnTemplate</Link> | The Customization of the move of the 'O' user    |
+| `idle`    | <Link to="#tttBtnTemplate">btnTemplate</Link> | The Customization of the button which is not occupied   |
 
-| Options     | Type                                                                                                               | Required | Default | Description                                                     |
-| ----------- | ------------------------------------------------------------------------------------------------------------------ | -------- | ------- | --------------------------------------------------------------- |
-| `userSlash` | <Link to="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</Link>   | ✘        | _user_  | Customize the Slash Option name (user slash option)                             |
 
-</div>
+---------------------------
 
-### Embed
+## `tttBtnTemplate`
 
-<div style={{textAlign: 'center'}}>
-
-| Options      | Type                                                                                                               | Required | Default   | Description                              |
-| ------------ | ------------------------------------------------------------------------------------------------------------------ | -------- | --------- | ---------------------------------------- |
-| `embedColor` | <Link to="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">Hex Code</Link> | ✘        | _#075FFF_ | Color of the Tictactoe guide embed       |
-| `embedFoot`  | <Link to="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</Link>   | ✘        | _credits_ | Embed Footer when the credits turned off |
-| `timeoutEmbedColor` | <Link to="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">Hex Code</Link> | ✘        | _#cc0000_ | Color of the Tictactoe timeout alert embed       |
-| `credit`     | <Link to="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</Link> | ✘        | _true_    | Credit the package                       |
-
-</div>
-
-### Buttons
-
-<div style={{textAlign: 'center'}}>
-
-| Options     | Type                                                                             | Required | Default | Description                          |
-| ----------- | -------------------------------------------------------------------------------- | -------- | ------- | ------------------------------------ |
-| `xEmoji`    | <Link to="https://discord.js.org/#/docs/main/stable/class/Emoji">Emoji ID</Link> | ✘        | _❌_    | Emoji for X user [Player 1]          |
-| `oEmoji`    | <Link to="https://discord.js.org/#/docs/main/stable/class/Emoji">Emoji ID</Link> | ✘        | _⭕_    | Emoji for O user [Player 2]          |
-| `idleEmoji` | <Link to="https://discord.js.org/#/docs/main/stable/class/Emoji">Emoji ID</Link> | ✘        | _➖_    | Emoji when the space is not occupied |
-
-</div>
+| Parameter      | Type                                                                                                                       | Description                                   |
+| ------------ | -------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- |
+| `style`       | <Link to="https://discord.js.org/#/docs/discord.js/stable/typedef/MessageButtonStyle">MessageButtonStyle</Link>       | The Style of the Button of your choice    |
+| `emoji`       | <Link to="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</Link>       | Custom Emoji (or) any emoji for your button.    |

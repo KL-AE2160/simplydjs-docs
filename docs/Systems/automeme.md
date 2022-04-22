@@ -1,13 +1,41 @@
 ---
-sidebar_position: 6
+
+sidebar_position: 1
 tags:
   - Systems
 ---
 
 # automeme
 
-The memes are sent automatically, so others will be able to laugh at the jokes without having to do anything !
+The memes are sent automatically, so others will able to laugh at the jokes without having to do anything !
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs
+  defaultValue="js"
+  values= {[
+    { label: 'Javascript', value: 'js', },
+    { label: 'Typescript', value: 'ts', },
+  ]
+}>
+<TabItem value="js">
+
+```js
+simplydjs.automeme(client, { 
+  channelId: '01234567890123' // channelId (required)
+
+</TabItem>
+
+<TabItem value="ts">
+
+```ts
+import simplydjs from "simply-djs";
+```
+
+</TabItem>
+
+</Tabs>
 
 ```js
 simplydjs.automeme(client, { 
@@ -33,10 +61,13 @@ client.on('ready' => {
 
 ## Arguments:
 ```ts
-simplydjs.automeme(client: Client, options: memeOptions)
+simplydjs.automeme(
+  client: Discord.Client,
+  options: memeOptions
+)
 ```
 
-- client: `Discord.Client`
+- client: [`Discord.Client`](https://discord.js.org/#/docs/discord.js/stable/class/Client)
 - options: [`memeOptions`](#options-memeoptions)
 
 ## Options `memeOptions`
@@ -45,7 +76,7 @@ import Link from '@docusaurus/Link';
 
 | Parameter | Type | Required | Default    | Description |
 | --------- | ----- | -------- | -------- | ---------- |
-| `channelId`       | <Link to="https://discord.js.org/#/docs/discord.js/stable/class/Channel?scrollTo=id">Channel ID</Link>       | ✓        | _none_     | Channel ID of a Discord `TextChannel`    |
-| `sub` | <Link to="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</Link> | ✘        | _default array_  | An array of custom subreddits                             |
-| `interval`   | <Link to="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">milliseconds</Link>     | ✘        | _120000ms_ | Interval between memes sent by the bot. |
-| `embed` | <Link to="/types/CustomizableEmbed">CustomizableEmbed</Link>         | ✘        | _none_  | Pass an CustomizableEmbed Object to customize the embed  |
+| `channelId`       | <Link to="https://discord.js.org/#/docs/discord.js/stable/class/Channel?scrollTo=id">Channel ID</Link>       | ✅        | _none_     | Channel ID of a Discord `TextChannel`    |
+| `sub` | <Link to="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</Link> | ❌        | _default array_  | An array of custom subreddits                            |
+| `interval`   | <Link to="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">milliseconds</Link>     | ❌        | _120000ms_ | Interval between memes sent by the bot. |
+| `embed` | <Link to="/docs/types/CustomizableEmbed">CustomizableEmbed</Link>         | ❌        | _default embed_  | Pass an CustomizableEmbed Object to customize the embed  |
