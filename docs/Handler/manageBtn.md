@@ -1,6 +1,6 @@
 # manageBtn
 
-An Button Handler for **simplydjs package functions.**
+A Button Handler for **simplydjs package functions.**
 
 :::danger WARNING
   `clickBtn()` is deprecated !
@@ -59,8 +59,8 @@ import Link from '@docusaurus/Link';
 
 | Parameter | Type | Required | Default    | Description |
 | --------- | ----- | -------- | -------- | ---------- |
-| `ticketSys` | <Link to="#ticketsys">ticketSys</Link> | ❌   | _none_     | Pass an ticketSys Object to customize things  |
-| `btnRole` | <Link to="#btnrole">btnRole</Link> | ❌   | _none_     | Pass an btnRole Object to customize things |
+| `ticketSys` | <Link to="#ticketsys">ticketSys</Link> | ❌   | _none_     | Pass a ticketSys Object to customize things  |
+| `btnRole` | <Link to="#btnrole">btnRole</Link> | ❌   | _none_     | Pass a btnRole Object to customize things |
 
 -------------------
 
@@ -75,11 +75,11 @@ import Link from '@docusaurus/Link';
 | Parameter | Type | Required | Default    | Description |
 | --------- | ----- | -------- | -------- | ---------- |
 | `ticketname` | <Link to="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</Link> | ❌   | _ticket-{userid}_     | The name of the ticket when opened.  |
-| `buttons` | <Link to="#ticketbtn">ticketBtn</Link> | ❌   | _Default_     | Pass an ticketBtn Object to customize the buttons  |
+| `buttons` | <Link to="#ticketbtn">ticketBtn</Link> | ❌   | _Default_     | Pass a ticketBtn Object to customize the buttons  |
 | `pingRole` | <Link to="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string/string[]</Link> | ❌   | _none_     | The Array (or) String of Role(s) to ping when someone opens a ticket  |
-| `category` | <Link to="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</Link> | ❌   | _none_     | The category id to create tickets on a specific category  |
-| `timed` | <Link to="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</Link> | ❌   | _none_     | An Boolean option to delete tickets when the time is up.  |
-| `embed` | <Link to="/docs/types/CustomizableEmbed">CustomizableEmbed</Link> | ❌   | _Default Embed_     | Pass an CustomizableEmbed Object to customize the embed  |
+| `category` | <Link to="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</Link> | ❌   | _none_     | The parent category id of the category you want the tickets to be created |
+| `timed` | <Link to="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</Link> | ❌   | _none_     | A Boolean option to delete tickets when the time is up.  |
+| `embed` | <Link to="/docs/types/CustomizableEmbed">CustomizableEmbed</Link> | ❌   | _Default Embed_     | Pass a CustomizableEmbed Object to customize the embed |
 
 -------------
 
