@@ -79,4 +79,4 @@ import Link from '@docusaurus/Link';
 | `channelId`       | <Link to="https://discord.js.org/#/docs/discord.js/stable/class/Channel?scrollTo=id">Channel ID</Link>       | ✅        | _none_     | Channel ID of a Discord `TextChannel`    |
 | `sub` | <Link to="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</Link> | ❌        | _default array_  | An array of custom subreddits                            |
 | `interval`   | <Link to="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">milliseconds</Link>     | ❌        | _120000ms_ | Interval between memes sent by the bot. |
-| `embed` | <Link to="/docs/types/CustomizableEmbed">CustomizableEmbed</Link>         | ❌        | _default embed_  | Pass an CustomizableEmbed Object to customize the embed  |
+| `embed` | <Link to="/docs/types/CustomizableEmbed">CustomizableEmbed</Link>         | ❌        | _default embed_  | Pass a CustomizableEmbed Object to customize the embed  |

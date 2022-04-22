@@ -6,7 +6,7 @@ tags:
 
 # rps
 
-A Classic RPS, But its in Discord & with your friends, How amazing ?!
+A classic RPS game, except this time it's on Discord to play with your pals, how cool is that ?
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -63,11 +63,11 @@ import Link from '@docusaurus/Link';
 
 | Parameter | Type | Required | Default    | Description |
 | --------- | ----- | -------- | -------- | ---------- |
-| `embed` | <Link to="/types/CustomizableEmbed">CustomizableEmbed</Link> | ✘   | _Default Embed_     | Pass an CustomizableEmbed Object to customize the embed  |
+| `embed` | <Link to="/types/CustomizableEmbed">CustomizableEmbed</Link> | ✘   | _Default Embed_     | Pass a CustomizableEmbed Object to customize the embed  |
 | `drawColor` | <Link to="https://discord.js.org/#/docs/discord.js/stable/typedef/ColorResolvable">ColorResolvable</Link> | ✘        | _#075FFF_  | Color of the embed when the match is a draw. |
 | `winColor` | <Link to="https://discord.js.org/#/docs/discord.js/stable/typedef/ColorResolvable">ColorResolvable</Link> | ✘        | _GREEN_  | Color of the embed when someone wins in the match. |
-| `opponent`   | <Link to="https://discord.js.org/#/docs/discord.js/stable/class/User">User</Link>     | ✘        | _none_ | The opponent of the player who invited to the match. |
-| `buttons` | <Link to="#rpsbuttons">rpsButtons</Link> | ✘   | _Default Buttons_     | Pass an rpsButtons Object to customize the buttons  |
+| `opponent`   | <Link to="https://discord.js.org/#/docs/discord.js/stable/class/User">User</Link>     | ✘        | _none_ | The opponent you're playing with. |
+| `buttons` | <Link to="#rpsbuttons">rpsButtons</Link> | ✘   | _Default Buttons_     | Pass a rpsButtons Object to customize the buttons  |
 
 ----------------
 

@@ -6,7 +6,7 @@ tags:
 
 # chatbot
 
-An technically advanced yet smarter chatbot system which is your friend.
+A chatbot system that is both technically advanced and intelligent, and is your buddy.
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -79,4 +79,4 @@ import Link from '@docusaurus/Link';
 | `channelId`       | <Link to="https://discord.js.org/#/docs/discord.js/stable/class/Channel?scrollTo=id">Channel ID</Link>       | ✓        | _none_     | Channel ID of a Discord `TextChannel`    |
 | `toggle` | <Link to="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</Link> | ✘        | _true_  | Enable or Disable the chatbot for your preference.                            |
 | `name`   | <Link to="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</Link>     | ✘        | _Simply-DJS_ | Name of the chatbot you are talking to. |
-| `developer`   | <Link to="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</Link>     | ✘        | _Rahuletto#0243_ | Name of the developer who maintains the bot. |
+| `developer`   | <Link to="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</Link>     | ✘        | _Rahuletto#0243_ | Name of the developer who maintains the chatbot. |
