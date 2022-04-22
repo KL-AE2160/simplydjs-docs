@@ -1,4 +1,5 @@
 ---
+
 sidebar_position: 1
 tags:
   - Systems
@@ -21,8 +22,8 @@ import TabItem from '@theme/TabItem';
 <TabItem value="js">
 
 ```js
-const simplydjs = require("simply-djs");
-```
+simplydjs.automeme(client, { 
+  channelId: '01234567890123' // channelId (required)
 
 </TabItem>
 
