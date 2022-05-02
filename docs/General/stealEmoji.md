@@ -1,9 +1,13 @@
 ---
-sidebar_position: 3
+sidebar_position: 9
 ---
 
 # stealEmoji
 This is an example of stealEmoji
+
+:::danger WARNING !
+We have not updated the docs for this function ! Please wait till it gets updated.
+:::
 
 ### With Customization
 ```js

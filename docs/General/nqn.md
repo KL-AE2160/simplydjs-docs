@@ -1,16 +1,15 @@
 ---
-sidebar_position: 5
+sidebar_position: 8
 ---
 
 # nqn
 
 This is an example of nqn
 
-:::info INFO
-
-Console logging Bug fixed
-
+:::danger WARNING !
+We have not updated the docs for this function ! Please wait till it gets updated.
 :::
+
 
 ### With Customization
 

@@ -1,3 +1,10 @@
+---
+sidebar_position: 1
+tags:
+  - Handler
+  - New
+---
+
 # manageBtn
 
 A Button Handler for **simplydjs package functions.**
@@ -7,6 +14,8 @@ A Button Handler for **simplydjs package functions.**
 
   Use `manageBtn()` instead of `clickBtn()`
 :::
+
+## Program
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -41,6 +50,10 @@ simplydjs.manageBtn(interaction, {
   // options (optional)
 })
 ```
+
+:::note
+This function requires you to [connect()](/docs/General/connect) to the mongo database !
+:::
 
 ## Arguments:
 ```ts
@@ -77,9 +90,9 @@ import Link from '@docusaurus/Link';
 | `ticketname` | <Link to="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</Link> | ❌   | _ticket-{userid}_     | The name of the ticket when opened.  |
 | `buttons` | <Link to="#ticketbtn">ticketBtn</Link> | ❌   | _Default_     | Pass a ticketBtn Object to customize the buttons  |
 | `pingRole` | <Link to="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string/string[]</Link> | ❌   | _none_     | The Array (or) String of Role(s) to ping when someone opens a ticket  |
-| `category` | <Link to="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</Link> | ❌   | _none_     | The parent category id of the category you want the tickets to be created |
-| `timed` | <Link to="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</Link> | ❌   | _none_     | A Boolean option to delete tickets when the time is up.  |
-| `embed` | <Link to="/docs/types/CustomizableEmbed">CustomizableEmbed</Link> | ❌   | _Default Embed_     | Pass a CustomizableEmbed Object to customize the embed |
+| `category` | <Link to="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</Link> | ❌   | _none_     | The parent category id of the category you want the tickets to be created  |
+| `timed` | <Link to="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</Link> | ❌   | _none_     | An Boolean option to delete tickets when the time is up.  |
+| `embed` | <Link to="/docs/types/CustomizableEmbed">CustomizableEmbed</Link> | ❌   | _Default Embed_     | Pass a CustomizableEmbed Object to customize the embed  |
 
 -------------
 

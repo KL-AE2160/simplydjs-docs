@@ -2,11 +2,14 @@
 sidebar_position: 3
 tags:
   - Others
+  - New
 ---
 
 # version
 
 Provides the package version you are currently using.
+
+## Program
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';

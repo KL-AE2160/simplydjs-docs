@@ -1,17 +1,12 @@
 ---
-sidebar_position: 3
+sidebar_position: 1
 tags:
-  - Systems
+  - General
 ---
 
-# bumpSystem
+# btnRole
 
-A Very cool bump reminder system that reminds when a bump is necessary
-[Only Disboard]
-
-:::note
-This function requires you to [connect()](/docs/General/connect) to the mongo database !
-:::
+A **Button Role System** that lets you create button roles with your own message. | *Requires: [**manageBtn()**](/docs/handler/manageBtn)*
 
 ## Program
 
@@ -44,22 +39,18 @@ import simplydjs from "simply-djs";
 </Tabs>
 
 ```js
-simplydjs.bumpSystem(client, message, {
-  channelId: ["01234567890123"], // channelId (required if auto: false)
+simplydjs.btnRole(interaction, {
+	data: {...}, // data object (required)
   // options (optional)
 })
 ```
 
+:::info NOTE
+This is **totally** different from [betterBtnRole](/docs/Systems/betterBtnRole) !
 
-:::info INFO
-This should be implemented in the `messageCreate` event and requires a `Message Intent` !
-
-```js
-client.on('messageCreate' => {
-  simplydjs.bumpSystem() // bump function
-})
+`betterBtnRole` is an system which is an button role builder. where,
+`btnRole` is a function that sends your message (with embeds) with the buttons necessary for the button role.
 :::
-
 
 ## Output
 
@@ -67,16 +58,14 @@ client.on('messageCreate' => {
 
 ## Arguments:
 ```ts
-simplydjs.bumpSystem(
-  client: Discord.Client,
-  message: Discord.Message,
-  options: bumpOptions
+simplydjs.btnRole(
+  interaction: Discord.Message | Discord.CommandInteraction,
+  options: betterBtnOptions
 )
 ```
 
-- client: [`Discord.Client`](https://discord.js.org/#/docs/discord.js/stable/class/Client)
-- message: [`Discord.Message`](https://discord.js.org/#/docs/discord.js/stable/class/Message)
-- options: [`bumpOptions`](#options-bumpoptions)
+- interaction: [`Discord.Message`](https://discord.js.org/#/docs/discord.js/stable/class/Message) | [`Discord.CommandInteraction`](https://discord.js.org/#/docs/discord.js/stable/class/CommandInteraction)
+- options: [`betterBtnOptions`](#options-betterbtnoptions)
 
 ## Options `btnOptions`
 

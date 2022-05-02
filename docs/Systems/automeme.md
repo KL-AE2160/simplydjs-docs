@@ -1,5 +1,4 @@
 ---
-
 sidebar_position: 1
 tags:
   - Systems
@@ -8,6 +7,8 @@ tags:
 # automeme
 
 The memes are sent automatically, so others will able to laugh at the jokes without having to do anything !
+
+## Program
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -22,8 +23,8 @@ import TabItem from '@theme/TabItem';
 <TabItem value="js">
 
 ```js
-simplydjs.automeme(client, { 
-  channelId: '01234567890123' // channelId (required)
+const simplydjs = require("simply-djs");
+```
 
 </TabItem>
 

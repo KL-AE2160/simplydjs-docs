@@ -8,6 +8,8 @@ tags:
 
 A **Button Role builder** that lets **admins create** button roles. | *Requires: [**manageBtn()**](/docs/handler/manageBtn)*
 
+## Program
+
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
@@ -71,6 +73,7 @@ import Link from '@docusaurus/Link';
 | `type` | <Link to="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">add / remove</Link> | ✅        | _none_  | The type which adds new buttons or removes existing buttons.  |
 | `channel` | <Link to="https://discord.js.org/#/docs/discord.js/stable/class/TextChannel">TextChannel</Link> | ❌        | _none_  | The channel of the message |
 | `label` | <Link to="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</Link> | ❌        | _none_  | The label of the button you're trying to create |
+| `emoji` | <Link to="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</Link> | ❌        | _none_  | The emoji of the button you're trying to create |
 | `messageId` | <Link to="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</Link> | ❌       | _none_  | The message you're trying to add a button to.  |
 | `role` | <Link to="https://discord.js.org/#/docs/discord.js/stable/class/Role">Role</Link> | ❌ | _none_  | The role to be given when a button is clicked |
 | `style` | <Link to="https://discord.js.org/#/docs/discord.js/stable/typedef/MessageButtonStyle">MessageButtonStyle</Link> | ❌ | _PRIMARY_  | The style of the button that is getting created.  |

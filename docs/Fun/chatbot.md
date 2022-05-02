@@ -8,6 +8,8 @@ tags:
 
 A chatbot system that is both technically advanced and intelligent, and is your buddy.
 
+## Program
+
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
@@ -45,11 +47,11 @@ simplydjs.chatbot(client, message, {
 ```
 
 :::info INFO
-This should be implemented in the `messageCreate` event !
+This should be implemented in the `messageCreate` event and requires a `Message Intent` !
 
 ```js
 client.on('messageCreate' => {
-  simplydjs.chatbot() // automeme function
+  simplydjs.chatbot() // chatbot function
 })
 :::
 

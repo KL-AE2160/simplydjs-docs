@@ -1,10 +1,14 @@
 ---
-sidebar_position: 1
+sidebar_position: 7
 ---
 
 # ticketSystem
 
 This is an example of ticketSystem
+
+:::danger WARNING !
+We have not updated the docs for this function ! Please wait till it gets updated.
+:::
 
 ### With Customization
 

@@ -1,12 +1,15 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 tags:
   - Others
+  - New
 ---
 
 # emitError
 
 Produce error messages just like Simply DJS
+
+## Program
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';

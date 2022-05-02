@@ -1,16 +1,15 @@
 ---
-sidebar_position: 9
+sidebar_position: 4
 ---
 
 # giveawaySystem
 
 This is an example of giveawaySystem
 
-:::info INFO
-
-Fixed multiple bugs ;)
-
+:::danger WARNING !
+We have not updated the docs for this function ! Please wait till it gets updated.
 :::
+
 
 ### Required
 ```

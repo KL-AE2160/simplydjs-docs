@@ -1,10 +1,14 @@
 ---
-sidebar_position: 5
+sidebar_position: 2
 ---
 
 # calculator
 
 This is an example of calculator
+
+:::danger WARNING !
+We have not updated the docs for this function ! Please wait till it gets updated.
+:::
 
 ### With Customization
 

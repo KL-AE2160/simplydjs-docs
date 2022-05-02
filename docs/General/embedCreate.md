@@ -1,16 +1,15 @@
 ---
-sidebar_position: 7
+sidebar_position: 4
 ---
 
 # embedCreate
 
 This is an example of embedCreate
 
-:::tip TIP
-
-This function has became Promised based and can return the embed `<JSON>`
-
+:::danger WARNING !
+We have not updated the docs for this function ! Please wait till it gets updated.
 :::
+
 
 ### With Customization
 ```js

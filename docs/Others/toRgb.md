@@ -1,13 +1,15 @@
-
 ---
-sidebar_position: 1
+sidebar_position: 2
 tags:
   - Others
+  - New
 ---
 
 # toRgb
 
 Transforms Hex code into RGB Array (or) RGB String. This makes it easy to convert from discord.js v13 to v14.
+
+## Program
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
